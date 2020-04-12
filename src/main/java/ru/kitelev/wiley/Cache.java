@@ -1,4 +1,4 @@
-package ru.kitelev.willey;
+package ru.kitelev.wiley;
 
 public interface Cache<K, V> {
     V get(K key);

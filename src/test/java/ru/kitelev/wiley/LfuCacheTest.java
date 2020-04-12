@@ -1,4 +1,4 @@
-package ru.kitelev.willey;
+package ru.kitelev.wiley;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

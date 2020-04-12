@@ -1,12 +1,12 @@
-package ru.kitelev.willey;
+package ru.kitelev.wiley;
 
 public class Caches {
-    public static <K, V> Cache<K, V> create(int maxSize, Strategy strategy) {
+    public static <K, V> Cache<K, V> create(int capacity, Strategy strategy) {
         switch (strategy) {
             case LFU:
-                return new LfuCache<>(maxSize);
+                return new LfuCache<>(capacity);
             case LRU:
-                return new LruCache<>(maxSize);
+                return new LruCache<>(capacity);
             default:
                 throw new IllegalArgumentException("Unknown cache strategy: " + strategy);
         }
