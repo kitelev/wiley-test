@@ -6,7 +6,7 @@ public class Caches {
             case LFU:
                 return new LfuCache<>(maxSize);
             case LRU:
-                throw new UnsupportedOperationException("TODO"); // TODO
+                return new LruCache<>(maxSize);
             default:
                 throw new IllegalArgumentException("Unknown cache strategy: " + strategy);
         }
