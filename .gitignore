@@ -1,0 +1,11 @@
+# Gradle project-specific cache directory
+.gradle/
+
+# Intellij Idea project settings
+.idea/
+
+# Intellij Idea output directory
+out/
+
+# Gradle build output directory
+build/
