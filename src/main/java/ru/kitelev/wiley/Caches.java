@@ -1,5 +1,8 @@
 package ru.kitelev.wiley;
 
+import ru.kitelev.wiley.impl.LfuCache;
+import ru.kitelev.wiley.impl.LruCache;
+
 public class Caches {
     public static <K, V> Cache<K, V> create(int capacity, Strategy strategy) {
         switch (strategy) {

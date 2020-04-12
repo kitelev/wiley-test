@@ -1,4 +1,6 @@
-package ru.kitelev.wiley;
+package ru.kitelev.wiley.impl;
+
+import ru.kitelev.wiley.Cache;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

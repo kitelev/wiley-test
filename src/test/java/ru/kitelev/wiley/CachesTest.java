@@ -37,5 +37,12 @@ class CachesTest {
         assertNotNull(cache.get(2));
         assertNotNull(cache.get(3));
         assertNotNull(cache.get(4));
+
+        cache.set(5, 5);
+
+        assertNull(cache.get(2));
+        assertNotNull(cache.get(3));
+        assertNotNull(cache.get(4));
+        assertNotNull(cache.get(5));
     }
 }
